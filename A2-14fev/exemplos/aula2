@@ -1,0 +1,15 @@
+ anotações - aula 2 - 14/2
+ 
+ //HOISTING: ATO declarar uma variável global após usa-la
+            //depos de usá-lo.
+            function bar(){
+                x = 4;
+                var x; virou global
+            }
+            
+            function foo(){
+                bar();
+                alert(x);
+            }
+            
+se um vetor tem o length ele pode ser chamado de objeto

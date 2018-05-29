@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+        
+        //Faça uma função que retorne se o numero é par ou impar:
+        
+            function parImpar(){
+                var x = prompt("digite um numero :");
+                if (x% 2 == 0){// se digitar letras em vez de numeros, ele tenta converter a string pra inteiro e retorna undefined
+                    alert ("é par");
+                }else{
+                    alert ("é impar");
+                }
+                //alert (undefined % 2 == 0);// ele vai corrigir o comportamento se você colocar uma string
+            }
+            
+            function somar(){
+                var x = prompt("digite um numero");
+                var y = prompt("digite outro numero");
+                x=parseInt(x);//aqui ele esta convertendo pra inteiro
+                y=parseInt(y);
+                alert(x+y);
+            }
+            
+            // outra forma de somar:
+            
+            //function somar() {
+               //var a = prompt("Primeiro numero para somar");
+               //var b = prompt("Segundo numero para somar");
+               
+               //a=parseInt(a);
+               //b=parseInt(b);
+               //soma=parseInt(a+b);
+           
+               //alert (soma);
+               
+           //}
+            
+            
+            
+        </script>
+    </head>
+    <body>
+        <script>
+            parImpar(); //chamando a função
+            //somar();
+        </script>
+    </body>
+</html>

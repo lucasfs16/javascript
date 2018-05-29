@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+         //EXERCICIO: considere a seguinte lista de objetos e mostre quem ficou de P3:
+        
+        //solução usando parametro, é melhor pq assim quem estiver de fora pode modificar o array
+        
+ //[{"nome":"Vitor", "P1":2, "P2":7},
+ //{"nome":"Alexandre", "P1":10, "P2":10},
+ //{"nome":"Bárbara", "P1":4, "P2":4},
+ //{"nome":"Lucas", "P1":9, "P2":9},
+ //{"nome":"Ana Júlia", "P1":7.5, "P2":5.5},
+ //{"nome":"Andressa", "P1":6.5, "P2":8}
+//]
+        
+        //usar for
+        
+            function testeVec(){
+                var alunos = [{nome:"Vitor", "idade":18, "RA":"201526800", "curso":"SI"},
+                              {nome:"Alexandre", "idade":27, "RA":"20151548", "curso":"SI"},
+                              {nome:"Lucas", "idade":18, "RA":"20151619", "curso":"SI"},
+                              {nome:"Ana Júlia", "idade":24, "RA":"20151619", "curso":"SI"},
+                              {nome:"Andressa", "idade":20, "RA":"2015949479", "curso":"SI"}];
+                var idadeMedia = 0;
+                for(var i in alunos){
+                    idadeMedia = idadeMedia + alunos[i].idade;
+                }
+                alert(idadeMedia/alunos.length);
+            }
+            
+
+            function verificaP3(alunos){
+                for(var i in alunos){
+                    var media = 0.5*(alunos[i].P1 + alunos[i].P2); 
+                    //multiplicar por 0.5 é igual a dividir por 2
+                    if (media < 6){
+                        alert(alunos[i].nome + " FICOU!");
+                    }else{
+                        alert(alunos[i].nome + " PASSOU!");
+                    }
+                }
+            }
+            
+
+            function verificaIdade(alunos){
+              
+                for(var i in alunos){
+                    
+                    if (alunos[i].idade < 21){
+                        alert(alunos[i].nome + " MENOS DE 21 ANOS");
+                    }else{
+                        alert(alunos[i].nome + " MAIS DE 21 ANOS");
+                    }
+                }
+            }
+            
+            
+        </script>
+    </head>
+    <body>
+        <script>
+                
+                verificaIdade([{nome:"Vitor", "idade":18, "RA":"201526800", "curso":"SI"},
+                              {nome:"Alexandre", "idade":27, "RA":"20151548", "curso":"SI"},
+                              {nome:"Lucas", "idade":18, "RA":"20151619", "curso":"SI"},
+                              {nome:"Ana Júlia", "idade":24, "RA":"20151619", "curso":"SI"},
+                              {nome:"Andressa", "idade":20, "RA":"2015949479", "curso":"SI"}]);
+                
+
+                verificaP3([{"nome":"Vitor", "P1":2, "P2":7},
+                            {"nome":"Alexandre", "P1":10, "P2":10},
+                            {"nome":"Bárbara", "P1":4, "P2":4},
+                            {"nome":"Lucas", "P1":9, "P2":9},
+                            {"nome":"Ana Júlia", "P1":7.5, "P2":5.5},
+                            {"nome":"Andressa", "P1":6.5, "P2":8}
+                          ]);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+    
+    // CORRIGIR - o valor do IMC está incorreto
+    
+    <head>
+        <script>
+            //1) Faça uma função que peça para o
+            //usuário digitar dois números
+            //e informe o IMC.
+            //OBS: Altura e peso são floats
+            
+            //2) Faça uma função que peça ao usário
+            //um nome e uma idade. A função deverá
+            //mostrar mensagem de erro caso o nome
+            //seja vazio ou a idade seja menor que 18 e,
+            //
+            
+            function IMC(){
+                var p = prompt("digite o peso");
+                var a = prompt("digite a altura");
+                var aquad = (a*a);
+                var calc = (p / aquad);
+                
+                p = parseFloat(p); //nao é obrigatorio pq multiplicação e divisão já convertem para float
+                a = parseFloat(a);
+                aquad = parseFloat(aquad);
+                calc = parseFloat(calc);
+                
+                alert("imc " + (calc));
+            }
+            
+            function idade(){
+                var nome = prompt("digite um nome");
+                var idade = prompt("digite uma idade");
+                idade=parseInt(idade);
+                
+                if(nome == "" || idade <18){
+                    alert("error");
+                }else{
+                    alert("sucessão");
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+           IMC();
+           //idade();
+        </script>
+    </body>
+</html>
+
+// ------------------ outra forma de fazer ------------------
+
+<html>
+    <head>
+        <script>
+            //1) Faça uma função que peça para o
+            //usuário digitar dois números
+            //e informe o IMC.
+            //OBS: Altura e peso são floats
+            
+            //2) Faça uma função que peça ao usário
+            //um nome e uma idade. A função deverá
+            //mostrar mensagem de erro caso o nome
+            //seja vazio ou a idade seja menor que 18 e,
+            //
+            
+            function IMC(){
+                var p = prompt("digite o peso");
+                var a = prompt("digite a altura");
+                p= parseFloat(p); //nao é obrigatorio pq multiplicação e divisão já convertem para float
+                a= parseFloat(a);
+                
+                alert("imc " + (p/(a * a)));
+            }
+            
+            
+            function idade(){
+                var nome = prompt("digite um nome");
+                var idade = prompt("digite uma idade");
+                idade=parseInt(idade);
+                
+                if(nome == "" || idade <18){
+                    alert("error");
+                }else{
+                    alert("sucessão");
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+            IMC();
+            //idade();
+        </script>
+    </body>
+</html>
+
+//-------------- exerc do Lucas ---------------------
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function    imc(p,h){
+                return (p/(h*h));
+            }
+        </script>
+    </head>
+    <body>
+        <script>alert("Seu IMC é de: "+imc(70,169));</script>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+       
+  /* 
+ 
+ verificar se está tudo certo --------------->
+ 
+EXERCICIO: Considere a seguinte lista de objetos:
+
+[{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}
+]
+
+E faça uma função para o que se pede:
+
+a) Mostre na tela todos os innerHTML;
+b) Mostre na tela as cores de span e p;
+c) Mostre todos os valores das divs;
+d) Exibe a quantidade de p's;
+e) Troque todas as cores para #EEEEEE;
+f) Troque todos os innerHTML para "Trocado".  */
+
+
+//TESTADO!:
+
+function mostraI(tag){
+    for(var i in tag){
+        alert(tag[i].innerHTML);
+        
+    }
+    
+}
+
+//CORRIGIR - esta aparecendo todas as tagnames:
+
+function cores(colors){
+    
+    for (var i in colors){
+        
+        if(colors[i].tagName == "span" || "p"){
+            alert(colors[i].tagName + " " +colors[i].color);
+        
+        }
+        
+    }
+    
+}
+ 
+ // TESTADO!:
+ 
+function divs(valores){
+    for  (var i in valores){
+        
+        if(valores[i].tagName == "div"){
+            
+            alert(valores[i].color + " " + valores[i].innerHTML);
+            
+        }
+        
+    }  
+    
+}  
+ 
+ 
+function qtdp(ps){
+    
+    var pes;
+    
+    pes = 0;
+    
+    for (var i in ps){
+        if (ps[i].tagName == "p") {
+            pes = pes + 1;
+        }        
+        
+    }
+    
+         alert ("Quantidade de p " + " = " + (pes));
+    
+}
+
+// TESTADO!:
+
+function trocaCor(novacor){
+    
+    for (var i in novacor) {
+       
+        if (novacor[i].cor != "#EEEEEE") {
+            var novacor = "#EEEEEE";        
+        }
+        
+        
+        alert ("nova cor: " + " " + (novacor));
+            
+    }
+    
+}
+ 
+function trocainner(novoinner){
+    
+    for(var i in novoinner) {
+        
+        if (novoinner[i].innerHTML != "") {
+            var novoinner = "Trocado";
+        
+    }
+    
+    alert ("novo InnerHTML" + " " + (novoinner));
+} 
+ 
+ 
+ "tagName", "color", "innerHTML"
+
+        
+        </script>
+    </head>
+    <body>
+        <script>
+        
+      /* testado!
+        mostraI([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}]);
+
+
+
+        cores([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}])
+*/
+
+/*
+        divs([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}]);
+  */
+  
+  /*
+        qtdp([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}]);
+    */
+    
+    /*
+    trocaCor([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}]);
+    */
+        
+    trocainner([{"tagName":"p", "color":"#FF00AC", "innerHTML":"OLA MUNDO"},
+ {"tagName":"div", "color":"#000000", "innerHTML":"Div1"},
+ {"tagName":"div", "color":"#FFFFFF", "innerHTML":"Outra Div"},
+ {"tagName":"p", "color":"#C87502", "innerHTML":"Outro p"},
+ {"tagName":"span", "color":"#B9ED47", "innerHTML":"Um span"}]);
+        
+        
+        </script>
+    </body>
+</html>

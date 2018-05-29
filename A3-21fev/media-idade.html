@@ -1,0 +1,38 @@
+<html>
+    <head>
+        
+        <script>
+            function  testeVec(){ 
+                var alunos = [{nome: "Vitor", "idade":18, "RA": 201526800},
+                            {nome: "Alexandre", "idade": 27, "RA":"20151111"},
+                            {nome: "Ana", "idade": 24, "RA":"20152222"},
+                            {nome: "Lucas", "idade": 18, "RA":"20153333"},
+                            {nome: "Andressa", "idade": 20, "RA":"20154444"}];
+          
+                for(var i in alunos) {
+                    alert(alunos[i].nome + " " + alunos[i].idade + " " + alunos[i].RA)
+                    
+                }
+            
+                
+                //Exercicios - calcular idade media dos alunos:
+                
+                var idadeMedia = 0; //idadeMedia = idade total
+                
+                for(var i in alunos){
+                    idadeMedia = idadeMedia + alunos[i].idade;    
+                }
+                
+                alert("Idade Média dos Alunos = " + idadeMedia/alunos.length);
+               
+            }
+            
+        </script>        
+    
+    </head>
+    
+    <body>
+        <script>testeVec();</script>
+        
+    </body>
+</html>

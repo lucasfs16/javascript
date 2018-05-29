@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+      
+            //função muito usada para verificar os atributos dos elementos:      
+            function desconstruir(objDom){
+               var aux = " ";
+               for(var i in objDom){
+                   aux = aux + i + " -> " + objDom[i] + "<br>"; 
+               }
+               document.write(aux);
+            }
+        
+            function teste(){
+               var btn = document.getElementById("b2");
+            
+            //testar todos para ver como funcionam:
+            //btn.innerHTML = "OLA JS!";
+            // btn.style.backgroundColor = "blue";
+            // btn.style.color="pink";
+            //btn.innerHTML = "CLIQUEI";
+            //desconstruir(btn);
+            btn.disabled = true;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p id="p1">Ola DOM!</p>
+
+        <!--funcao q aparece os valores das tags, 
+        usada para saber quais valores foram alterados-->
+        <!--<button id="b1" onclick="desconstruir()">Clique!</button>-->
+
+        <button id="b2" onclick="teste()">Desabilitar Botão!</button>
+        
+    </body>
+</html>

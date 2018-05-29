@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="UTF-8">
+        <script>
+           
+           /*
+            function desconstruir(objDom){
+               var aux = " ";
+               for(var i in objDom){
+                   aux = aux + i + " -> " + objDom[i] + "<br>"; 
+               }
+               document.write(aux);
+            }
+            
+            */
+            
+            function teste(){
+            var s1 = document.getElementById("s1");
+       
+       
+           // desconstruir(s1);
+           
+           
+           //document.write(s1[s1.selectedIndex].value);
+                d1.innerHTML = s1[s1.selectedIndex].value;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <select id="s1">
+          <option value="java">Java</option>
+          <option value="php">PHP</option>
+          <option value="c++">C++</option>
+        </select>
+          <button id="b1" onclick="teste()">OK</button>
+           <div id="d1">Não selecionado</div>
+    </body>
+</html>

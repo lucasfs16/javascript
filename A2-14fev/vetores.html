@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            //Exercício: Faça uma função que receba 
+            //dois vetores como parâmetro. 
+            //Se os tamanhos forem diferentes, mostre erro.
+            //Se forem iguais crie um novo vetor, que
+            // contenha a soma dos elementos de cada vetor
+            //primeiro com primeiro, segundo com segundo, etc..
+            
+            function vetor(){
+                var v1 =[1,2,3];
+                var v2 =[4,5,6];
+                
+                // for (var i in v) {
+                    //alert(v[i]);    
+                //}
+                // ou
+                
+                for(var i=0; i <3; i++) {
+                 if(v1.length == v2.length){
+                    alert("vetor3 (v1 + v2) :" + (v1[i]+v2[i]));
+                }else{
+                    alert("erro");
+                }
+                    
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+            vetor();
+        </script>
+    </body>
+</html>

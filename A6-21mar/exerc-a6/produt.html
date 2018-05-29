@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script src="produt.js"></script>
+    </head>
+    <body>
+<!--Considere um vetor da forma
+
+produtos({"resp":[{nome:"Caneta", preco:5.5, qtd:8},{nome:"Tesoura", preco:8.27, qtd:3}]})
+
+Faça uma função que receba o objeto acima e monte uma página da seguinte forma
+
+<table>
+    <thead>
+        <tr> NOME PRODUTO </tr>
+        <tr> PREÇO </tr>
+        <tr> QUANTIDADE </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Caneta</td>
+            <td>5.5</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Tesoura</td>
+            <td>8.27</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+-->
+
+<table name="tb1">
+    <thead name="th1">
+        <tr>
+          <td name="nome"> NOME PRODUTO </td>
+          <td name="preco"> PREÇO </td>
+          <td name="qtd"> QUANTIDADE </td>
+        </tr>  
+    </thead>
+    
+    <tbody name="corpoTab">
+        
+    </tbody>
+</table>
+
+   <script>
+       produtos([{nome:"Caneta", preco:5.5, qtd:8},{nome:"Tesoura", preco:8.27, qtd:3}]);
+    </script>
+
+</body>
+</html>

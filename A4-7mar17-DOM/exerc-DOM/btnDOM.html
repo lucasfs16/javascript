@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <script>
+            /*
+1) Ao clicar em um botao, os parágrafos de ids 
+p1, p2 e p3 devem ficar com fundo amarelo, azul e rosa
+respectivamente, seus conteúdos devem ser mudados para
+"Fui mexido" e o botão clicado deve conter a mensagem
+"Fui clicado" sendo desabilitado. 
+
+usando onclick
+ 
+    */  
+           
+        function parag (){
+            
+        var p1 = document.getElementById("p1");  
+        var p2 = document.getElementById("p2");
+        var p3 = document.getElementById("p3");
+          
+            p1.style.backgroundColor="yellow";
+            p2.style.backgroundColor="blue";
+            p3.style.backgroundColor="pink";
+               
+            p1.innerHTML="Fui mexido";    
+            p2.innerHTML="Fui mexido";    
+            p3.innerHTML="Fui mexido";
+              
+        var btn = document.getElementById("b1");
+             
+             btn.innerHTML="Fui clicado"
+             btn.disabled = true;
+        }  
+            
+        </script>        
+    
+    </head>
+    <body>
+        <p id="p1"> Nota P1</p>
+         <p id="p2"> Nota P2</p>
+          <p id="p3"> Nota P3</p>
+       <button id="b1" onclick="parag()">Clique!</button>
+       
+    </body>
+</html>

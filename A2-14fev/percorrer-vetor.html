@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            // essa funcao recebe um vetor chamado v que é variavel local
+            function percorrer(v){
+                for(var i=0; i<v.length; i++){ //ou for(var i=0; i >= 0; i--){
+                    alert(v[i]);
+                }        
+            }
+            
+            //adicionar manualmente 10 valores ao vetor:
+            
+            function popular () {
+                var aux = [];
+                for(var i=0; i < 10; i++) {
+                    aux.push(prompt("Digite um elemento: ")); //adiciona ou empilha. No javascript os vetores sao pilhas
+                    
+                }
+                alert(aux);
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        <script>
+            //percorrer([2, -9, "BCA", 7]); //o javascript aceita hibrido: tipos diferentes
+            popular();
+        </script>
+    </body>
+</html>

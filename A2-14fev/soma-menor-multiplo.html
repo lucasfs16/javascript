@@ -1,0 +1,42 @@
+<html>
+    <head>
+         <script type="text/javascript">
+        /* Dados os 6 paragrafos 20,40,50,70,10,80, mostrar:
+            - A soma de todos;
+            - Qual o menor de todos;
+            - Mostrar os múltiplos de 7 e pintar o backgroud destes de rosa.
+        */
+    function mostraSoma(){
+    var ps= document.getElementsByTagName("p");
+    var soma=0 ;
+    var menor=parseInt(ps[0].innerHTML);
+    for (var i=0; i<ps.length; i++){
+        
+        soma += parseInt(ps[i].innerHTML);
+        if (menor>parseInt(ps[i].innerHTML));{
+             menor =parseInt(ps[i].innerHTML);
+             }
+        if((parseInt(ps[i].innerHTML)%7) ==0){
+          ps[i].style.backgroundColor = "pink";
+          ps[i].innerHTML += "teste";
+        }
+            }
+                alert("Soma: " + soma);
+                alert("Menor: " + menor);
+            }    
+    
+    </script>
+</head>
+        <body>
+            <p>20</p>
+            <p>40</p>
+            <p>14</p>
+            <p>50</p>
+            <p>70</p>
+            <p>10</p>
+            <p>80</p>
+        <script type="text/javascript">;
+        mostraSoma();
+        </script>
+       </body>
+</html>

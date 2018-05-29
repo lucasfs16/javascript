@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <script>
+        /*
+2) Suponha que há, em uma página, três divs. Cada vez
+que clicarmos nela, seu conteúdo será mudado para 
+"clicado" e sua cor de fonte para vermelho.
+
+usando onclick
+ 
+    */  
+           
+          function ex2(tag){
+               tag.innerHTML = "clicado";
+               tag.style.color = "red";
+            }
+            
+        </script>
+    </head>
+    <body>
+        
+        <div onclick="ex2(this)">DIV1</div>
+        <div onclick="ex2(this)">DIV2</div>
+        <div onclick="ex2(this)">DIV3</div>
+        <!-- nao precisa de botao nesse caso: 
+        <button id="b1" onclick="ex2()">Clique!</button> -->
+        
+    </body>
+</html>

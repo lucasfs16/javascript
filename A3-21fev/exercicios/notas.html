@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            
+        //EXERCICIO: considere a seguinte lista de objetos e mostre quem ficou de P3:
+        
+ //[{"nome":"Vitor", "P1":2, "P2":7},
+ //{"nome":"Alexandre", "P1":10, "P2":10},
+ //{"nome":"Bárbara", "P1":4, "P2":4},
+ //{"nome":"Lucas", "P1":9, "P2":9},
+ //{"nome":"Ana Júlia", "P1":7.5, "P2":5.5},
+ //{"nome":"Andressa", "P1":6.5, "P2":8}
+//]
+        
+        //usar for
+        
+  function notas() {
+      var alunos = 
+         [{"nome":"Vitor", "P1":2, "P2":7},
+         {"nome":"Alexandre", "P1":10, "P2":10},
+         {"nome":"Bárbara", "P1":4, "P2":4},
+         {"nome":"Lucas", "P1":9, "P2":9},
+         {"nome":"Ana Julia", "P1":7.5, "P2":5.5},
+         {"nome":"Andressa", "P1":6.5, "P2":8}]
+      
+      // var media = (((alunos[i].P1) + (alunos[i].P2)) / (2))
+      
+      for(var i in alunos) {
+        media = (((alunos[i].P1) + (alunos[i].P2)) / (2))
+        //alert("Media de " + alunos[i].nome + " " + media);
+          
+        if(media<6){
+            alert("Esse ser está de P3: " + alunos[i].nome);
+        }  else {
+            alert("Esse lindo nao esta de P3: " + alunos[i].nome);
+        }
+        
+      }
+      
+  }
+  
+  
+        
+            
+        </script>        
+    
+    
+    </head>
+    
+    <body>
+        <script>notas();</script>
+        
+        
+    </body>
+</html>

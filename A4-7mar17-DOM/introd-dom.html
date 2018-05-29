@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             //funcao muito usada para desconstruir [ver o que tem dentro]:
+            function desconstruir(objDom){
+               var aux = " ";
+               for(var i in objDom){
+                   aux = aux + i + " -> " + objDom[i] + "<br>"; 
+               }
+               document.write(aux);
+            }
+            
+            //antes da seta = indice e depois da seta = valor:        
+            function teste(){
+               var p = document.getElementById("p1");
+               p.innerHTML = "OLA JS!";
+               p.style.backgroundColor = "blue";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="p1">Ola DOM!</p>
+        <button id="b1" onclick="teste()">Clique!</button>
+    </body>
+</html>
